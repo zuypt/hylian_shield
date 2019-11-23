@@ -397,7 +397,7 @@ def write_log(conn_id, d, client_ip):
 
     
     try:
-        with open(str(conn_id + '_' + client_ip + '.l'), 'ab') as f:
+        with open(str(conn_id) + '_' + client_ip + '.l', 'ab') as f:
             f.write(d)
     except Exception as e:
         command_logger.error(e)
