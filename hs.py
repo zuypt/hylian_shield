@@ -403,9 +403,9 @@ def write_log(conn_id, d, client_ip):
         command_logger.error(e)
         return
 
-    log_lock.acquire()
-    log_id += 1
-    log_lock.release()
+    #log_lock.acquire()
+    #log_id += 1
+    #log_lock.release()
 
 def set_logger_stream(p):
     global W
